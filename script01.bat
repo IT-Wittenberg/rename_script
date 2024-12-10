@@ -1,5 +1,6 @@
 @echo off
 :: Skript zur Änderung des Computernamens basierend auf der Seriennummer
+:: Behält den Stamm und ändert INV zu SN
 
 :: Temporäre Dateien für die Auswertung
 set "tempfile=%TEMP%\currentname.txt"
