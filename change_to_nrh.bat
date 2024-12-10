@@ -1,5 +1,5 @@
 @echo off
-:: Skript zur Änderung des Computernamens auf NBRAV-{SERIEN No.}
+:: Skript zur Änderung des Computernamens auf NBNRH-{SERIEN No.}
 
 :: Seriennummer auslesen
 for /f "tokens=*" %%A in ('wmic bios get serialnumber /value ^| find "="') do set "SerialNumber=%%A"
@@ -12,7 +12,7 @@ if "%SerialNumber%"=="" (
 )
 
 :: Neuen Namen generieren
-set "NewName=NBRAV-%SerialNumber%"
+set "NewName=NBNRH-%SerialNumber%"
 
 :: Aktuellen Computernamen auslesen
 for /f "tokens=*" %%A in ('wmic computersystem get name /value ^| find "="') do set "CurrentName=%%A"
